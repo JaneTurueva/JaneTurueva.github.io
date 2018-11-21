@@ -25,5 +25,10 @@ npm run test
 npm run lint
 ```
 
+### Push to master
+```
+
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
