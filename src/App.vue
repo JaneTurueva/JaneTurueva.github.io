@@ -82,6 +82,7 @@
   .photo {
     border-radius: 50%;
     overflow: hidden;
+    margin: 0 auto;
     border: 3px solid #fff;
   }
 
