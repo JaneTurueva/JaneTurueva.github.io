@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <div class="content">
-      <div class="main-title">
+      <div class="content">
         <div class="photo"><img src="./assets/ya.jpg"></div>
         <h1>Evgenia Turueva</h1>
         <ul class="links">
@@ -27,84 +26,84 @@
           </li>
         </ul>
       </div>
-    </div>
+
     <vue-particles color="#fff"></vue-particles>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import VueParticles from 'vue-particles'
-Vue.use(VueParticles)
-export default {
-  name: 'app',
-}
+  import Vue from 'vue'
+  import VueParticles from 'vue-particles'
 
+  Vue.use(VueParticles)
+
+  export default {
+    name: 'app',
+  }
 </script>
 
 <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
 
-html, body {
-  height: 100%;
-}
+  #app {
+    align-items: center;
+    background-image: url("./assets/background.jpg");
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  height: 100%;
-}
-#particles-js {
-  background-image: url("./assets/background.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.main-title {
-  color: #fff;
-  position: relative;
-  z-index: 999;
-  font-family: 'Allura', cursive;
-  font-size: 25px;
-}
-.main-title h1 {
-  font-size: 60px;
-  line-height: 40px;
-}
-.photo {
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid #fff;
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-}
-.photo img {
-  display: block;
-  height: 350px;
-  width: 350px;
-}
-.links a{
-  color: #ddd;
-  font-size: 35px;
-  transition: color 0.2s ease;
-}
-.links a:hover {
-  color: #fff;
-}
-.links li {
-  display: inline-block;
-  padding: 0 10px;
+  .content {
+    color: #fff;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    font-family: 'Allura', cursive;
+  }
 
-}
-.content {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-}
+  h1 {
+    font-size: 60px;
+    line-height: 40px;
+  }
+
+  .photo {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+  }
+
+  .photo img {
+    display: block;
+    height: 350px;
+    width: 350px;
+  }
+
+  a {
+    color: #ddd;
+    font-size: 35px;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  .links li {
+    display: inline-block;
+    padding: 0 10px;
+
+  }
 </style>
