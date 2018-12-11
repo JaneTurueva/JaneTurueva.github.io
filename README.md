@@ -25,9 +25,9 @@ npm run test
 npm run lint
 ```
 
-### Push to master
+### Push dist folder to master
 ```
-
+git subtree push --prefix dist origin master
 ```
 
 ### Customize configuration
