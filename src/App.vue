@@ -94,7 +94,8 @@
   a {
     color: #ddd;
     font-size: 35px;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
+    text-shadow: 1px 1px 4px #333;
   }
 
   a:hover {
@@ -105,5 +106,12 @@
     display: inline-block;
     padding: 0 10px;
 
+  }
+
+  @media screen and (max-width: 480px) {
+    .photo img {
+      width: 300px;
+      height: 300px;
+    }
   }
 </style>
